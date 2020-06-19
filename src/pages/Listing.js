@@ -115,7 +115,7 @@ const Listing = () => {
 
       <Row>
         {filteredEvents.length === 0 && (
-          <Col sm={12} className="text-center">
+          <Col sm={12} className="text-center mt-5">
             No data found
           </Col>
         )}
