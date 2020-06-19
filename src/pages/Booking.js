@@ -52,7 +52,7 @@ const Booking = props => {
         : event.target.value;
 
     if (name === "numOfSeats") {
-      setBookingMembers(Array(value - 1).fill(""));
+      setBookingMembers(Array(value - 1).fill(''));
     }
 
     setBookingDetails({
@@ -81,9 +81,6 @@ const Booking = props => {
     } else {
       setBookingEvent(props.location.state);
     }
-    return () => {
-      // cleanup
-    };
   }, [props.location.state]);
 
   return (
@@ -112,15 +109,15 @@ const Booking = props => {
                 <BookingReceipt bookingDetails={bookingDetails} />
               </div>
             ) : (
-              <BookingForm
-                bookingDetails={bookingDetails}
-                bookingEvent={bookingEvent}
-                bookingMembers={bookingMembers}
-                handleInputChange={handleInputChange}
-                handleBookingComplete={handleBookingComplete}
-                handleAttendeeNameChange={handleAttendeeNameChange}
-              />
-            )}
+                <BookingForm
+                  bookingDetails={bookingDetails}
+                  bookingEvent={bookingEvent}
+                  bookingMembers={bookingMembers}
+                  handleInputChange={handleInputChange}
+                  handleBookingComplete={handleBookingComplete}
+                  handleAttendeeNameChange={handleAttendeeNameChange}
+                />
+              )}
           </Col>
         </Row>
       )}
