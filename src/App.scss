@@ -143,6 +143,10 @@ body {
     .list-group-item {
       background-color: $black-russian;
     }
+
+    .invalid-feedback {
+      text-align: left;
+    }
   }
 
 }
