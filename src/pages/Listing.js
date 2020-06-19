@@ -104,7 +104,7 @@ const Listing = () => {
         <Col
           md={{ span: 6, offset: 3 }}
           xs={{ span: 8, offset: 2 }}
-          className="text-center mt-4"
+          className="text-center mt-4 mb-2"
         >
           <SearchEvent
             searchQuery={searchQuery}
